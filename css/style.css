@@ -1,0 +1,83 @@
+
+
+
+/* so you where cirous eenough to open the css :) thanks for that  enjoy it and learn from it */
+
+
+
+/* this is to import font from the link below from the good fonts*/
+@import "http://fonts.googleapis.com/css?family=Montserrat:300,400,700";
+
+
+
+/* this is the firlds styling of the border and colors */
+.table tr {
+  border-top: 1px solid #ddd; // this is top border of the row
+  border-bottom: 1px solid #ddd; //this is bottom border
+}
+
+
+
+
+@media (min-width: 480px) {
+  .table td:before {
+    display: none;
+  }
+}
+
+@media (min-width: 480px) {
+  .table th, .table td {
+    display: table-cell;
+    padding: .25em .5em; /* the padding (spacing) between the rows */
+  }
+  .table th:first-child, .table td:first-child {
+    padding-left: 0; /* padding of the first child in the table*/
+  }
+  .table th:last-child, .table td:last-child {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 480px) {
+  .table th, .table td {
+    padding: 1em !important;
+  }
+}
+
+
+/*this is to align the text */
+
+.table th, .table td {
+  text-align: left;
+}
+
+
+
+
+
+body {
+  padding: 0 2em;
+  font-family: Montserrat, sans-serif; // this is to add the font that was previosly imported
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #444;
+  background: #eee;
+}
+
+/* this is the header styling the h1 that says
+Student Names Push and pull Example
+*/
+
+h1 {
+  font-weight: normal; /* font style example : can be bold */
+  color: #34495E; /* this is the color for the header which is dark blue */
+  margin-left: 10em; /*margin to center the h1 /*/
+}
+
+/*table styling and colors */
+
+.table {
+  background: #34495E; /* style of the background of the table */
+  color: #fff; /* color of the table's text white/grey */
+  width: 100%; /* width of the table to be full screen */
+}
